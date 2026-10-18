@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dorcas Adeboye: portfolio
 
-## Getting Started
+Personal portfolio site. Next.js 15 (App Router), TypeScript, Tailwind CSS v4. Every page is static.
 
-First, run the development server:
+## Run locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3000
+npm run build      # production build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Editing content
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+All copy lives in `src/content/`. No page code needs to change to update content.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| File | What it holds |
+|---|---|
+| `site.ts` | Name, contacts, navigation, certifications, education, tools |
+| `case-studies.ts` | Case studies (Work pages) |
+| `experience.ts` | Roles and contributions (Experience page) |
+| `projects.ts` | Projects and their screenshots |
+| `skills.ts` | Skills and the work that proves each one |
 
-## Learn More
+Images are in `public/images/`. The résumé download is `public/dorcas-adeboye-cv.pdf`; replace that file to update it.
 
-To learn more about Next.js, take a look at the following resources:
+## Environment variables (optional)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Variable | Purpose |
+|---|---|
+| `NEXT_PUBLIC_SITE_URL` | Final site URL, used for SEO, sitemap and social previews |
+| `NEXT_PUBLIC_FORMSPREE_ID` | Formspree form ID. Without it, the contact form opens the visitor's email app instead |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deploy
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Import the repo into Vercel, add the variables above, then turn on **Analytics** in the Vercel project settings.

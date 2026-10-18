@@ -1,26 +1,72 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --font-sans: "Schibsted Grotesk Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-ink: #0e1116;
+  --color-body: #3d4350;
+  --color-muted: #5b6270;
+  --color-line: #e4e7ec;
+  --color-line-strong: #c9ced6;
+  --color-surface: #f5f6f8;
+  --color-paper: #ffffff;
+  --color-accent: #2f5bff;
+  --color-accent-strong: #1e44d9;
+  --color-accent-soft: #eef2ff;
+  --color-ok: #1a9e5c;
+  --color-ok-soft: #e7f6ee;
+  --color-ok-ink: #11663d;
+  --color-warn: #f2b33d;
+  --color-night: #0e1116;
+  --color-night-line: #2a2f38;
+  --color-night-muted: #9aa3b2;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --animate-rise: rise 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  --animate-draw: draw 0.9s 0.35s cubic-bezier(0.6, 0, 0.3, 1) both;
+  --animate-pulse-dot: pulse-dot 2.4s ease-in-out infinite;
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes draw {
+    from { stroke-dashoffset: 260; }
+    to { stroke-dashoffset: 0; }
+  }
+  @keyframes pulse-dot {
+    0%, 100% { box-shadow: 0 0 0 0 rgb(26 158 92 / 0.45); }
+    50% { box-shadow: 0 0 0 6px rgb(26 158 92 / 0); }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+  }
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+  ::selection {
+    background: var(--color-accent);
+    color: #fff;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }
