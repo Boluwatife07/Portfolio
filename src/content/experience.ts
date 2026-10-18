@@ -187,12 +187,11 @@ export const roles: Role[] = [
         title: "Frontend development",
         items: [
           "Built Peng, a wedding planning platform: sign-up and onboarding, dashboard, website templates and gift registry.",
-          "Built modules of EasySCH, a school management platform: dashboards, admin interfaces and student and teacher modules.",
           "Built reusable components and worked with designers and backend engineers on each release.",
         ],
       },
     ],
-    projects: ["peng", "easysch"],
+    projects: ["peng"],
     tools: ["React", "Next.js", "TypeScript", "Tailwind CSS", "React Query"],
   },
 ];

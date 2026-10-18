@@ -41,7 +41,7 @@ export function ProjectCard({ p }: { p: Project }) {
             alt={cover.alt}
             fill
             sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw"
-            className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+            className="object-cover object-left-top transition-transform duration-500 group-hover:scale-[1.03]"
           />
         ) : (
           <div className="grid h-full place-items-center p-6 text-center">

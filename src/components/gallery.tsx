@@ -31,7 +31,7 @@ export function Gallery({ images }: { images: Img[] }) {
         className="group relative block aspect-[16/10] w-full overflow-hidden rounded-2xl border border-line bg-surface"
         aria-label={`Enlarge: ${img.alt}`}
       >
-        <Image src={img.src} alt={img.alt} fill priority sizes="(min-width: 1200px) 1136px, 100vw" className="object-cover object-top" />
+        <Image src={img.src} alt={img.alt} fill priority sizes="(min-width: 1200px) 1136px, 100vw" className="object-contain" />
         <span className="absolute right-3 bottom-3 rounded-md bg-ink/80 px-2.5 py-1 font-mono text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100">
           click to enlarge
         </span>
@@ -52,7 +52,7 @@ export function Gallery({ images }: { images: Img[] }) {
                   i === active ? "border-accent" : "border-transparent opacity-70 hover:opacity-100",
                 )}
               >
-                <Image src={im.src} alt="" fill sizes="112px" className="object-cover object-top" />
+                <Image src={im.src} alt="" fill sizes="112px" className="object-cover object-left-top" />
               </button>
             ))}
           </div>

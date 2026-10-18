@@ -52,8 +52,7 @@ export const projects: Project[] = [
     problem: "The company needed a website explaining its products and services to businesses, riders and customers.",
     built: ["Responsive marketing pages from high-fidelity designs", "Products, services, blog and FAQ sections", "API integration for dynamic content"],
     stack: ["React", "Next.js", "JavaScript"],
-    images: [],
-    imageNote: "Screenshots coming soon.",
+    images: shots("zenon-website", ["Home page hero"]),
     links: [{ label: "Visit zenon.systems", href: "https://zenon.systems/" }],
   },
   {
@@ -154,20 +153,6 @@ export const projects: Project[] = [
     images: shots("lagos-oims", ["Dashboard", "Orphanages", "Records", "Adoptions", "Reports"]),
     mobile: "/images/projects/lagos-oims/mobile.webp",
     imageNote: "Shown with demo data. All names are placeholders.",
-  },
-  {
-    slug: "easysch",
-    name: "EasySCH",
-    tagline: "School management platform for administrators, teachers and students.",
-    context: "Purejim Limited",
-    kind: "Employer work",
-    year: "2023",
-    role: "Frontend developer",
-    problem: "Schools needed one system for administration, teaching and student records.",
-    built: ["Admin dashboards", "Student and teacher modules", "Forms and administrative interfaces"],
-    stack: ["React", "Next.js", "JavaScript"],
-    images: [],
-    imageNote: "Screenshots coming soon.",
   },
 ];
 
