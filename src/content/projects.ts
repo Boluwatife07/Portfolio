@@ -22,27 +22,6 @@ const shots = (slug: string, alts: string[]) =>
 
 export const projects: Project[] = [
   {
-    slug: "brightbridge",
-    name: "BrightBridge platform",
-    tagline: "Property deal platform for supported housing, from first requirement to signed lease.",
-    context: "Bright Bridge Connect",
-    kind: "Employer work",
-    year: "2026",
-    role: "Product definition and build",
-    problem: "Care providers, landlords and introducers needed one place to run a property deal without exposing each other's contacts too early.",
-    built: [
-      "Four role portals: internal team, care provider, landlord and introducer",
-      "Requirements, property submission and review, viewings and offers",
-      "Heads of terms with identity reveal, works and snagging, compliance documents, lease and completion",
-      "Built in 11 stages, each type-checked and buildable",
-    ],
-    stack: ["Next.js", "TypeScript", "Vercel"],
-    howBuilt: "AI-assisted build that I specified, directed and reviewed stage by stage.",
-    images: shots("brightbridge", ["Internal workspace: property review", "Care provider overview", "Care provider requirements", "Viewings", "Landing page with role selection", "Care provider registration"]),
-    links: [{ label: "Source on GitHub", href: "https://github.com/Boluwatife07/BrightBridge" }],
-    featured: true,
-  },
-  {
     slug: "peng",
     name: "Peng",
     tagline: "Wedding planning platform: onboarding, dashboard, website templates and gift registry.",

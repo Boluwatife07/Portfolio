@@ -103,7 +103,6 @@ export const roles: Role[] = [
       },
     ],
     caseStudies: ["defining-and-building-a-property-platform-mvp"],
-    projects: ["brightbridge"],
     tools: ["Next.js", "TypeScript", "Vercel", "Airtable", "Figma", "DocuSign", "Claude"],
   },
   {

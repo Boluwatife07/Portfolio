@@ -32,11 +32,11 @@ export const skillGroups: SkillGroup[] = [
     title: "Technical",
     intro: "Enough engineering to ask the right questions, and sometimes to just build it.",
     skills: [
-      { name: "React, Next.js and TypeScript", evidence: [pr("peng", "Peng"), pr("brightbridge", "BrightBridge platform"), pr("bandcheck", "BandCheck")] },
+      { name: "React, Next.js and TypeScript", evidence: [pr("peng", "Peng"), pr("psnl-website", "PSNL website"), pr("bandcheck", "BandCheck")] },
       { name: "REST APIs and integration", evidence: [cs("verifying-what-phase-1-delivered", "API verification"), ex("zenon", "API integration at Zenon")] },
       { name: "Git and code review workflows", evidence: [cs("delivery-process-for-an-outsourced-mobile-build", "CODEOWNERS merge gate")] },
       { name: "Data pipelines and automation", evidence: [pr("bandcheck", "Weekly data refresh with GitHub Actions")] },
-      { name: "Directing AI-assisted development", evidence: [pr("brightbridge", "11-stage AI-assisted build"), ex("keys-community", "Rules for AI-assisted Flutter work")] },
+      { name: "Directing AI-assisted development", evidence: [pr("age-dp-generator", "AGE display-picture generator"), ex("keys-community", "Rules for AI-assisted Flutter work")] },
     ],
   },
   {
