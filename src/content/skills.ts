@@ -43,7 +43,7 @@ export const skillGroups: SkillGroup[] = [
     title: "Commercial and stakeholders",
     intro: "Keeping partners, vendors and contracts tied to delivery.",
     skills: [
-      { name: "Partnership development", evidence: [cs("securing-two-airline-partnerships", "Two airline partnerships")] },
+      { name: "Partnership development", evidence: [cs("securing-two-airline-partnerships", "Two airline deals, closed solo")] },
       { name: "Scope and budget negotiation", evidence: [ex("bright-bridge-connect", "Fixed-budget design engagement")] },
       { name: "Contract coordination", evidence: [ex("bright-bridge-connect", "Commercial agreement review"), ex("keys-community", "Agency contract changes")] },
       { name: "Executive communication", evidence: [ex("africa-gaming-expo", "Keynote deck for a state regulator")] },

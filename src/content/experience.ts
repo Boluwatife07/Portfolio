@@ -127,8 +127,8 @@ export const roles: Role[] = [
       {
         title: "Partnerships",
         items: [
-          "Secured Kenya Airways as the first airline partner for AGE 2026 and ran the activation.",
-          "Secured Ethiopian Airlines as Official Airline Partner for AGE 2027 through cold outreach.",
+          "Closed Kenya Airways as Official Airline Partner for AGE 2026, owning the deal alone from cold outreach to signature, then ran the activation.",
+          "Closed Ethiopian Airlines as Official Airline Partner for AGE 2027, again from first cold outreach to close.",
           "Managed media and sponsorship partnership threads and sponsorship collateral.",
         ],
       },

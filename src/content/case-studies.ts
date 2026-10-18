@@ -238,30 +238,31 @@ export const caseStudies: CaseStudy[] = [
     org: "Africa Gaming Expo",
     title: "Securing two airline partnerships",
     summary:
-      "Originated official airline partnerships with Kenya Airways for AGE 2026 and Ethiopian Airlines for AGE 2027 through cold outreach, then ran the activation.",
+      "Took two official airline partnerships from cold outreach to signed deal on my own: Kenya Airways for AGE 2026 and Ethiopian Airlines for AGE 2027.",
     capabilities: ["Commercial", "Delivery"],
     glance: {
-      role: "Technical Project Coordinator (partnership lead)",
+      role: "Technical Project Coordinator (sole owner, initiation to close)",
       timeline: "2025 – 2026",
-      team: "CEO, events team",
+      team: "Just me, from first contact to close",
       tools: ["Email", "LinkedIn", "Airline MICE portals"],
       status: "Kenya Airways: AGE 2026 · Ethiopian Airlines: AGE 2027",
     },
     context:
       "Africa Gaming Expo is a Lagos-based gaming and fintech industry event with delegates travelling from across Africa and beyond. It had no existing airline relationships.",
     problem: ["Airline outreach relied on paper letters, which were slow and rarely reached the right person."],
-    myRole: "I originated both partnerships through direct cold outreach and managed the stakeholder engagement through to activation.",
+    myRole:
+      "I owned both deals end to end, alone: finding the right contacts, cold outreach, the proposal, negotiating and closing, then running the activation.",
     actions: [
-      { title: "Moved outreach to digital channels", text: "Replaced paper letters with LinkedIn, email and airline MICE (events) applications." },
-      { title: "Secured Kenya Airways for AGE 2026", text: "The event's first airline partner." },
+      { title: "Moved outreach to digital channels", text: "Replaced paper letters with LinkedIn, email and airline MICE (events) applications, and found the right people in each airline's events team." },
+      { title: "Closed Kenya Airways for AGE 2026", text: "Took the deal from first cold message to signed Official Airline Partner, the event's first airline partnership." },
       { title: "Ran the activation", text: "Set up the delegate travel code, arranged representative passes and clarified what each entitlement covered." },
-      { title: "Secured Ethiopian Airlines for AGE 2027", text: "Official Airline Partner for the next edition." },
+      { title: "Closed Ethiopian Airlines for AGE 2027", text: "Repeated the approach from scratch and closed Ethiopian Airlines as Official Airline Partner for the next edition." },
     ],
     decisions: [
       { title: "Go through the airlines' own events channels", why: "MICE teams exist to support events. Reaching them directly was faster than general correspondence." },
     ],
     results: [
-      "Two official airline partnerships for consecutive editions of the event.",
+      "Two official airline partnerships for consecutive editions of the event, both originated and closed by me.",
       "A repeatable digital outreach approach for future partners.",
     ],
     artifacts: [
