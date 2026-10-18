@@ -107,11 +107,11 @@ export const roles: Role[] = [
   {
     slug: "africa-gaming-expo",
     org: "Africa Gaming Expo",
-    orgNote: "Lagos-based gaming and fintech industry event (AGEAfrique)",
+    orgNote: "African gaming and fintech industry event (AGEAfrique)",
     role: "Technical Project Coordinator",
     type: "Freelance",
     dates: "Mar 2025 – Present",
-    location: "Lagos · Remote",
+    location: "Remote",
     summary: "I coordinate technical projects and strategic initiatives across Africa Gaming Expo and affiliated businesses.",
     groups: [
       {

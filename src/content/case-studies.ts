@@ -262,7 +262,7 @@ export const caseStudies: CaseStudy[] = [
       status: "Kenya Airways: AGE 2026 · Ethiopian Airlines: AGE 2027",
     },
     context:
-      "Africa Gaming Expo is a Lagos-based gaming and fintech industry event with delegates travelling from across Africa and beyond. It had no existing airline relationships.",
+      "Africa Gaming Expo is a gaming and fintech industry event with delegates travelling from across Africa and beyond. It had no existing airline relationships.",
     problem: ["Airline outreach relied on paper letters, which were slow and rarely reached the right person."],
     myRole:
       "I owned both deals end to end, alone: finding the right contacts, cold outreach, the proposal, negotiating and closing, then running the activation.",

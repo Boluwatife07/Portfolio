@@ -1,7 +1,7 @@
 export const site = {
   name: "Dorcas Adeboye",
   role: "Technical Project Manager",
-  location: "Lagos, Nigeria · works remotely",
+  location: "Works remotely with teams in the UK and Africa",
   availability: "Open to Technical Project Manager roles",
   url: "https://dorcas-adeboye.vercel.app",
   description:

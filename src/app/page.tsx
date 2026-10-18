@@ -20,7 +20,7 @@ export default function Home() {
           <div className="flex animate-rise flex-col gap-1">
             <h1 className="text-[19px] font-semibold tracking-[-0.01em]">
               Dorcas Adeboye
-              <span className="block font-normal text-body">Technical Project Manager, Lagos and remote</span>
+              <span className="block font-normal text-body">Technical Project Manager</span>
             </h1>
           </div>
 
