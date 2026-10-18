@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { site } from "@/content/site";
 import { cx } from "./ui";
+import { ModeToggle } from "./reading-mode";
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -24,12 +25,12 @@ export function SiteHeader() {
   return (
     <header
       className={cx(
-        "sticky top-0 z-40 border-b bg-white/85 backdrop-blur-md transition-colors",
+        "sticky top-0 z-40 border-b bg-paper/85 backdrop-blur-md transition-colors",
         scrolled || open ? "border-line" : "border-transparent",
       )}
     >
       <nav aria-label="Main" className="mx-auto flex max-w-[1200px] items-center justify-between gap-4 px-5 py-4 sm:px-8">
-        <Link href="/" className="group flex items-center gap-2.5 text-[17px] font-bold tracking-[-0.01em]">
+        <Link href="/" className="group flex shrink-0 items-center gap-2.5 whitespace-nowrap text-[17px] font-bold tracking-[-0.01em]">
           <span
             aria-hidden="true"
             className="grid h-8 w-8 place-items-center rounded-lg bg-ink font-mono text-[13px] font-medium text-white transition-transform duration-300 group-hover:-rotate-6"
@@ -56,6 +57,7 @@ export function SiteHeader() {
               )}
             </Link>
           ))}
+          <ModeToggle size="sm" className="ml-4 hidden border-l border-line pl-4 xl:flex" />
           <a
             href={site.cv}
             download
@@ -80,8 +82,9 @@ export function SiteHeader() {
       </nav>
 
       {open && (
-        <div id="mobile-nav" className="border-t border-line bg-white lg:hidden">
+        <div id="mobile-nav" className="border-t border-line bg-paper lg:hidden">
           <div className="mx-auto flex max-w-[1200px] flex-col px-5 py-3 sm:px-8">
+            <ModeToggle size="sm" className="py-3" />
             {site.nav.map((item) => (
               <Link
                 key={item.href}

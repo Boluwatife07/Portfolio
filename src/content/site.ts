@@ -38,21 +38,29 @@ export const education = {
   grade: "CGPA 4.11 / 5.0",
 };
 
+export const hero = {
+  plain: "I make sure what the business asked for is what the team ships, on time and without surprises.",
+  eng: "I turn scope into specs you can build against, keep dependencies visible, and check every requirement before it ships.",
+};
+
 export const capabilities = [
   {
     n: "01",
     title: "Delivery management",
-    text: "Sprint planning, release readiness and the working rules between in-house teams and external agencies.",
+    text: "Teams, agencies and deadlines kept in step, so launches happen when they were promised.",
+    tech: "Sprint cadence, release readiness, Definition of Done and the working agreement between in-house and agency teams.",
   },
   {
     n: "02",
     title: "Requirements and QA",
-    text: "Specs engineers can build from, traced from requirement to design to test, and checked before release.",
+    text: "Clear plans everyone signs up to, and proof that what shipped matches them.",
+    tech: "Testable requirements traced from PRD to design to test, and verified against the build before release.",
   },
   {
     n: "03",
     title: "Technical understanding",
-    text: "A frontend developer before I became a TPM. I understand how the pieces fit, ask informed questions about APIs and estimates, and still build prototypes.",
+    text: "A frontend developer before I became a TPM, so engineering conversations stay grounded in what is realistic.",
+    tech: "Frontend background in React and Next.js. I follow API contracts and estimates closely, and prototype when that is faster than a document.",
   },
 ];
 

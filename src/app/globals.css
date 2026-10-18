@@ -4,23 +4,25 @@
   --font-sans: "Schibsted Grotesk Variable", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
 
-  --color-ink: #0e1116;
-  --color-body: #3d4350;
-  --color-muted: #5b6270;
-  --color-line: #e4e7ec;
-  --color-line-strong: #c9ced6;
-  --color-surface: #f5f6f8;
-  --color-paper: #ffffff;
-  --color-accent: #2f5bff;
-  --color-accent-strong: #1e44d9;
-  --color-accent-soft: #eef2ff;
+  --color-ink: #141826;
+  --color-body: #3e4456;
+  --color-muted: #5d6477;
+  --color-line: #e3e6ec;
+  --color-line-strong: #c7ccd7;
+  --color-surface: #f3f4f7;
+  --color-mist: #e9ecf2;
+  --color-paper: #fcfcfb;
+  --color-accent: #3152f5;
+  --color-accent-strong: #2140d9;
+  --color-accent-soft: #eef1ff;
+  --color-strike: #c0352b;
   --color-ok: #1a9e5c;
   --color-ok-soft: #e7f6ee;
   --color-ok-ink: #11663d;
   --color-warn: #f2b33d;
-  --color-night: #0e1116;
-  --color-night-line: #2a2f38;
-  --color-night-muted: #9aa3b2;
+  --color-night: #18213f;
+  --color-night-line: #2b3556;
+  --color-night-muted: #a3abc2;
 
   --animate-rise: rise 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
   --animate-draw: draw 0.9s 0.35s cubic-bezier(0.6, 0, 0.3, 1) both;
@@ -70,3 +72,29 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* Tracked-changes rewrite */
+.tc-del {
+  text-decoration-line: line-through;
+  text-decoration-thickness: 0.07em;
+  text-decoration-color: transparent;
+  animation: tc-del 0.6s var(--d, 0ms) cubic-bezier(0.6, 0, 0.3, 1) forwards;
+}
+.tc-ins {
+  color: var(--color-accent);
+  background: linear-gradient(var(--color-accent), var(--color-accent)) no-repeat 0 100% / 100% 0.07em;
+  animation: tc-ins 1.9s var(--d, 0ms) cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+@keyframes tc-del {
+  to { color: var(--color-strike); text-decoration-color: var(--color-strike); opacity: 0.55; }
+}
+@keyframes tc-ins {
+  0% { opacity: 0; filter: blur(3px); }
+  20% { opacity: 1; filter: none; }
+  70% { color: var(--color-accent); background-size: 100% 0.07em; }
+  100% { color: inherit; background-size: 0 0.07em; }
+}
+
+/* Horizontal rail */
+.rail { scrollbar-width: none; }
+.rail::-webkit-scrollbar { display: none; }

@@ -6,6 +6,7 @@ export type CaseStudy = {
   org: string;
   title: string;
   summary: string;
+  summaryTech: string;
   capabilities: Capability[];
   glance: { role: string; timeline: string; team: string; tools: string[]; status: string };
   context: string;
@@ -25,7 +26,9 @@ export const caseStudies: CaseStudy[] = [
     org: "KEYS Community",
     title: "Setting up the delivery process for an outsourced mobile build",
     summary:
-      "Negotiated the working agreement between an in-house team and an external Flutter agency: sprint cadence, Definition of Done, review gates and who owns which feature.",
+      "Two teams, one product and no shared rules. I got an in-house team and an outside agency agreeing on how work is planned, checked and accepted, before any code was written.",
+    summaryTech:
+      "Negotiated the development process for an in-house plus agency Flutter build: two-week sprints, written scope, a shared Definition of Done, CODEOWNERS merge gates and per-feature ownership.",
     capabilities: ["Delivery", "Vendor management", "Technical"],
     glance: {
       role: "Technical Project Manager (lead on the agreement)",
@@ -71,7 +74,9 @@ export const caseStudies: CaseStudy[] = [
     org: "KEYS Community",
     title: "Verifying what Phase 1 actually delivered",
     summary:
-      "Built a requirement-by-requirement verification tracker across every Phase 1 feature, giving leadership a clear view of what the backend had and had not delivered.",
+      "Nobody could say how finished the backend really was. I turned every requirement into a yes-or-no check, so leadership could see exactly what was done, half done and missing.",
+    summaryTech:
+      "Built a requirement-level verification tracker for Phase 1: every PRD line as a testable check with status, evidence and priority, plus a screen-to-API map for handoff.",
     capabilities: ["QA", "Requirements", "Technical"],
     glance: {
       role: "Technical Project Manager (owner)",
@@ -115,7 +120,9 @@ export const caseStudies: CaseStudy[] = [
     org: "KEYS Community",
     title: "Creating one source of truth for product requirements",
     summary:
-      "Reconciled product specs against the designs, logged every decision, and brought all Phase 1 requirement documents into one approved format.",
+      "The documents said one thing and the designs said another. I settled every disagreement with the product owner and turned the documents into one set the team trusts.",
+    summaryTech:
+      "Diffed each PRD against Figma, logged a decision per discrepancy, and rewrote the Phase 1 PRDs into one versioned format with user stories and acceptance criteria.",
     capabilities: ["Requirements", "Product"],
     glance: {
       role: "Technical Project Manager (owner)",
@@ -158,7 +165,9 @@ export const caseStudies: CaseStudy[] = [
     org: "KEYS Community",
     title: "Turning admin panel scope into an engineering backlog",
     summary:
-      "Took the staff admin panel from a scope document to a versioned PRD and a buildable Jira backlog that surfaced hidden prerequisites early.",
+      "The team wanted to start building staff tools straight away. I wrote the spec and showed what had to exist first, so nobody built on sand.",
+    summaryTech:
+      "Took the admin panel from scope document to PRD v3.0 and a Jira backlog that front-loads staff auth, role-based access, 2FA and audit logging before feature tickets.",
     capabilities: ["Requirements", "Delivery", "Technical"],
     glance: {
       role: "Technical Project Manager (owner)",
@@ -196,7 +205,9 @@ export const caseStudies: CaseStudy[] = [
     org: "Bright Bridge Connect",
     title: "Prototyping a multi-party platform so design could move forward",
     summary:
-      "Turned two end-to-end PRDs into a clickable prototype covering every user role, so the designers could see the whole journey before designing it.",
+      "Designers needed to see how every user moves through a deal. I wrote the requirements and built a clickable prototype they could design from.",
+    summaryTech:
+      "Wrote two end-to-end PRDs, then built a staged Next.js and TypeScript prototype with AI assistance, type-checked and buildable at every stage, as the design reference.",
     capabilities: ["Product", "Technical", "Requirements"],
     glance: {
       role: "Technical Project Manager (requirements and prototype)",
@@ -239,7 +250,9 @@ export const caseStudies: CaseStudy[] = [
     org: "Africa Gaming Expo",
     title: "Securing two airline partnerships",
     summary:
-      "Took two official airline partnerships from cold outreach to signed deal on my own: Kenya Airways for AGE 2026 and Ethiopian Airlines for AGE 2027.",
+      "Took two official airline partnerships from a cold first message to a signed deal, on my own: Kenya Airways for AGE 2026 and Ethiopian Airlines for AGE 2027.",
+    summaryTech:
+      "Replaced paper letters with LinkedIn, email and airline MICE channels, closed Kenya Airways and Ethiopian Airlines solo, then ran activation: travel code, passes and entitlements.",
     capabilities: ["Commercial", "Delivery"],
     glance: {
       role: "Technical Project Coordinator (sole owner, initiation to close)",

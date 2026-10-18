@@ -10,7 +10,7 @@ export function Container({ className, children }: { className?: string; childre
 }
 
 export function Eyebrow({ children, className }: { children: ReactNode; className?: string }) {
-  return <p className={cx("font-mono text-[13px] uppercase tracking-wide text-accent", className)}>{children}</p>;
+  return <p className={cx("text-[15px] font-semibold text-accent", className)}>{children}</p>;
 }
 
 export function SectionHeading({
@@ -29,7 +29,7 @@ export function SectionHeading({
       <Eyebrow>{eyebrow}</Eyebrow>
       <As
         className={cx(
-          "font-bold tracking-[-0.03em] text-ink",
+          "font-semibold tracking-[-0.03em] text-ink",
           As === "h1" ? "text-[clamp(40px,5.2vw,64px)] leading-[1.02]" : "text-[clamp(30px,3.4vw,40px)] leading-[1.1]",
         )}
       >

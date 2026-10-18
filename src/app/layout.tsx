@@ -6,6 +6,7 @@ import "./globals.css";
 import { site } from "@/content/site";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { ReadingModeProvider } from "@/components/reading-mode";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? site.url;
 
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
   icons: { icon: "/icon.svg" },
 };
 
-export const viewport: Viewport = { themeColor: "#ffffff" };
+export const viewport: Viewport = { themeColor: "#fcfcfb" };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
@@ -37,11 +38,13 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         >
           Skip to content
         </a>
-        <SiteHeader />
-        <main id="main" className="flex-1">
-          {children}
-        </main>
-        <SiteFooter />
+        <ReadingModeProvider>
+          <SiteHeader />
+          <main id="main" className="flex-1">
+            {children}
+          </main>
+          <SiteFooter />
+        </ReadingModeProvider>
         <Analytics />
       </body>
     </html>

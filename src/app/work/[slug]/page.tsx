@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { caseStudies, getCaseStudy } from "@/content/case-studies";
 import { Arrow, Container, Eyebrow } from "@/components/ui";
+import { ModeToggle, Tracked } from "@/components/reading-mode";
 
 export function generateStaticParams() {
   return caseStudies.map((c) => ({ slug: c.slug }));
@@ -30,12 +31,12 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
             <span aria-hidden="true"> / </span>
             <span className="text-ink">{cs.id}</span>
           </nav>
-          <div className="flex flex-wrap items-center gap-3 font-mono text-[13px]">
-            <span className="rounded bg-accent px-2 py-0.5 text-white">{cs.id}</span>
-            <span className="text-muted">{cs.org}</span>
-          </div>
-          <h1 className="max-w-4xl text-[clamp(36px,4.8vw,60px)] leading-[1.05] font-bold tracking-[-0.035em]">{cs.title}</h1>
-          <p className="max-w-3xl text-xl leading-relaxed text-body">{cs.summary}</p>
+          <p className="text-[15px] text-muted">{cs.org}</p>
+          <h1 className="max-w-4xl text-[clamp(36px,4.8vw,60px)] leading-[1.05] font-semibold tracking-[-0.035em]">{cs.title}</h1>
+          <p className="max-w-3xl text-[clamp(19px,1.8vw,23px)] leading-relaxed text-body">
+            <Tracked plain={cs.summary} eng={cs.summaryTech} />
+          </p>
+          <ModeToggle size="sm" className="xl:hidden" />
         </Container>
       </header>
 
@@ -149,7 +150,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
           href={`/work/${next.slug}`}
           className="group flex flex-col gap-3 rounded-2xl bg-ink p-8 text-white transition-colors hover:bg-[#1b2029] sm:p-10"
         >
-          <span className="font-mono text-[13px] text-night-muted">Next case study · {next.id}</span>
+          <span className="text-sm text-night-muted">Next case study</span>
           <span className="text-[clamp(24px,3vw,34px)] leading-tight font-bold tracking-[-0.02em]">
             {next.title} <Arrow />
           </span>
