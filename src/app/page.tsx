@@ -51,7 +51,7 @@ export default function Home() {
           <p className="max-w-[600px] text-[19px] leading-[1.6] text-body sm:text-xl">
             I sit between delivery and the technical detail: writing requirements engineers can build from, setting the
             process between teams and agencies, and checking that what ships matches what was agreed. Frontend developer
-            before I was a project manager.
+            before I became a Technical Project Manager.
           </p>
           <div className="flex flex-wrap gap-3">
             <ButtonLink href="/work">View selected work</ButtonLink>
@@ -79,7 +79,7 @@ export default function Home() {
               <span>DA-2026</span>
               <span className="rounded bg-ok-soft px-1.5 py-0.5 text-ok-ink">READY</span>
             </div>
-            <p className="mt-2 text-sm leading-snug font-semibold">Hire a TPM who can read the code</p>
+            <p className="mt-2 text-sm leading-snug font-semibold">Hire a TPM fluent in product and engineering</p>
             <div className="mt-2 flex items-center gap-1.5 text-xs text-muted">
               <span className="grid h-[18px] w-[18px] place-items-center rounded-full bg-accent text-[10px] font-bold text-white">
                 D

@@ -52,7 +52,7 @@ export const capabilities = [
   {
     n: "03",
     title: "Technical understanding",
-    text: "A frontend developer before a project manager. I read the APIs, question the estimates and still build prototypes.",
+    text: "A frontend developer before I became a TPM. I understand how the pieces fit, ask informed questions about APIs and estimates, and still build prototypes.",
   },
 ];
 
