@@ -3,7 +3,7 @@ export const site = {
   role: "Technical Project Manager",
   location: "Works remotely with teams anywhere",
   availability: "Open to Technical Project Manager roles",
-  url: "https://dorcas-adeboye.vercel.app",
+  url: "https://dorcasadeboye.vercel.app",
   description:
     "Dorcas Adeboye is a Technical Project Manager with a frontend engineering background. She writes requirements engineers can build from, sets the process between in-house teams and agencies, and checks that what ships matches what was agreed.",
   cv: "/dorcas-adeboye-cv.pdf",
