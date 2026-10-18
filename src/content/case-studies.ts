@@ -51,8 +51,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     decisions: [
       { title: "Keep shared foundations and authentication in-house", why: "Reviewing an earlier design-system proposal, I flagged that the biggest risk was the lack of agreed architecture between the two teams. Keeping the shared base in one team removes that risk at the source." },
-      { title: "Tie sprint demos to payment confirmation", why: "A working demo on the real backend is the clearest proof that work is done. Linking it to payment keeps both sides honest without extra paperwork." },
-      { title: "Write objection windows into the contract terms", why: "Fixed written-objection checkpoints, linked to the master services agreement, stop disagreements from drifting for weeks." },
+      { title: "Accept work through a live demo", why: "A working demo on the real backend is the clearest proof that work is done, and it keeps both teams honest without extra paperwork." },
     ],
     results: [
       "Both teams and the founder have one written process covering scope, review, acceptance and ownership.",
@@ -60,7 +59,7 @@ export const caseStudies: CaseStudy[] = [
       "A newly onboarded Flutter lead was given a week-one goal of turning the agreement into day-to-day standards.",
     ],
     artifacts: [
-      { title: "Sprint and acceptance cycle", text: "How a feature moves from commitment to payment.", items: ["Sprint planning", "Written scope (1 working day)", "Build", "Code review via CODEOWNERS", "Demo on real backend", "Acceptance and payment"] },
+      { title: "Sprint and acceptance cycle", text: "How a feature moves from commitment to payment.", items: ["Sprint planning", "Written scope (1 working day)", "Build", "Code review via CODEOWNERS", "Demo on real backend", "Acceptance"] },
       { title: "Definition of Done (recreated)", text: "The checks every feature must pass, for both teams.", items: ["Acceptance criteria met", "Reviewed by tech lead, no self-approval", "Integrated with the real backend", "Accessibility: WCAG 2.2 AA", "Minimum automated test coverage", "Demo recorded and accepted"] },
     ],
     learned:
@@ -82,7 +81,7 @@ export const caseStudies: CaseStudy[] = [
       status: "In progress",
     },
     context:
-      "Leadership wanted to hand the entire frontend to an external team. That only works if the backend APIs are complete first, and nobody could say with confidence how complete they were.",
+      "Before the next phase of frontend work, the team needed to know how complete the backend really was, and nobody could say with confidence.",
     problem: [
       "Status was reported feature by feature, in broad terms like 'mostly done'. The product requirement documents had drifted from the designs, so they could not be used as the checklist either.",
     ],
@@ -100,7 +99,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     results: [
       "Leadership got a requirement-level picture of delivered, partial and missing backend work for the first time.",
-      "The tracker surfaced specific defects, such as one-time passcodes with the wrong length and an expiry far longer than specified.",
+      "The tracker surfaced specific gaps between what was specified and what the backend actually did, each logged with evidence.",
       "Resident onboarding now has an engineering handoff pack: requirements, design-versus-PRD decisions, screen-to-API mapping and a verification plan.",
     ],
     artifacts: [
@@ -134,9 +133,9 @@ export const caseStudies: CaseStudy[] = [
     myRole: "I ran the reconciliation process, gathered decisions from the product owner, and owned the standard format.",
     actions: [
       { title: "Compared each PRD with its designs", text: "Extracted the design details, listed every discrepancy, and put each one to the product owner for a decision." },
-      { title: "Logged every decision with an ID", text: "Each discrepancy got a decision record stating which source wins and why, for example in the Chat and Community Wallet features." },
+      { title: "Logged every decision with an ID", text: "Each discrepancy got a decision record stating which source wins and why." },
       { title: "Created a standard document format", text: "Cover page, document table, numbered sections, and user stories with acceptance criteria at the end, with tracked changes on every edit." },
-      { title: "Flagged contradictions across documents", text: "Found rules that conflicted between features, such as different voting thresholds and inconsistent role names, and recorded the final ruling." },
+      { title: "Flagged contradictions across documents", text: "Found rules and names that disagreed from one feature to another, and recorded the final ruling for each." },
     ],
     decisions: [
       { title: "Decide every discrepancy explicitly", why: "A silent fix in one document creates a new contradiction somewhere else. A logged decision can be found and reused." },
@@ -175,7 +174,7 @@ export const caseStudies: CaseStudy[] = [
     myRole: "I wrote the PRD, ran the decisions with the founder, and converted it into the engineering backlog.",
     actions: [
       { title: "From scope to PRD", text: "Moved the functional scope through several versions to a locked v3.0, splitting it into Phase 1 and Phase 2 parts." },
-      { title: "Locked the key decisions", text: "Recorded rulings on how communities are set up, label-only versus functional staff roles, and what was out of scope." },
+      { title: "Locked the key decisions", text: "Recorded each ruling on scope, roles and permissions, and what was out of scope." },
       { title: "Built the backlog", text: "Merged the PRD's user stories with the foundation tickets nobody had listed: staff accounts, role-based access, two-factor login and activity logging." },
       { title: "Kept tickets small", text: "Every ticket covers one responsibility, so it can be estimated, built and tested on its own." },
     ],
@@ -195,40 +194,42 @@ export const caseStudies: CaseStudy[] = [
     slug: "defining-and-building-a-property-platform-mvp",
     id: "CS-05",
     org: "Bright Bridge Connect",
-    title: "Defining and building a property platform MVP",
+    title: "Prototyping a multi-party platform so design could move forward",
     summary:
-      "Wrote two end-to-end PRDs and built an 11-stage platform covering the full deal lifecycle across four user roles.",
+      "Turned two end-to-end PRDs into a clickable prototype covering every user role, so the designers could see the whole journey before designing it.",
     capabilities: ["Product", "Technical", "Requirements"],
     glance: {
-      role: "Technical Project Manager (product definition and build)",
+      role: "Technical Project Manager (requirements and prototype)",
       timeline: "Jul – Oct 2026",
       team: "Founder, a product designer",
-      tools: ["Next.js", "TypeScript", "Vercel", "Airtable", "Figma", "Claude (AI-assisted build)"],
-      status: "All 11 stages built as a working prototype",
+      tools: ["Next.js", "TypeScript", "Airtable", "Figma", "Claude (AI-assisted build)"],
+      status: "Internal prototype used to guide design (not public)",
     },
     context:
-      "Bright Bridge Connect matches care providers who need housing with landlords and property introducers. Every deal involves several parties, sensitive relationships and many steps before a lease is signed.",
+      "Bright Bridge Connect is a pre-launch UK platform connecting care providers with housing. Every deal involves several parties and many steps, and the product had to be designed before it could be built.",
     problem: [
-      "The business needed a platform that could carry a deal from first requirement to signed lease, without exposing one party's contacts to another too early.",
+      "The requirements were long and detailed. The designers needed to understand how each type of user moves through a deal before they could design the screens, and static wireframes were not showing how the steps connect.",
     ],
-    myRole: "I wrote the product requirements, designed the communication model, and built the platform stage by stage with AI-assisted development.",
+    myRole:
+      "I wrote the product requirements, then built a clickable prototype from them with AI-assisted development, so the design team had a working reference to design from.",
     actions: [
-      { title: "Wrote the requirements", text: "Two end-to-end PRDs, one for care providers and one for property partners, including notification, activity timeline and escalation catalogues." },
-      { title: "Designed the communication model", text: "One anonymised thread per matched property, with identities revealed only at heads of terms, plus private threads between the business and each party." },
-      { title: "Built it in 11 stages", text: "Registration, requirements, property submission and review, viewings, viewing outcomes, offers, heads of terms, works and snagging, compliance documents, lease and completion, and landlord onboarding." },
-      { title: "Kept each stage releasable", text: "Type-check, build and push at the end of every stage, so the prototype always worked." },
+      { title: "Wrote the requirements", text: "Two end-to-end PRDs, one per type of user, including notification, activity timeline and escalation catalogues." },
+      { title: "Built a clickable prototype", text: "Covered the full journey for every user role, so anyone could click through a deal from start to finish." },
+      { title: "Built it in stages", text: "Planned the prototype as a sequence of stages, each type-checked and buildable, so it always worked and could be reviewed early." },
+      { title: "Used it to drive design reviews", text: "Ran design reviews against the prototype rather than against documents, which produced a concrete list of fixes." },
       { title: "Set up operations", text: "An Airtable register with linked tables, automations and prefilled partner forms." },
     ],
     decisions: [
-      { title: "Protect the introducer relationship", why: "Requiring landlord onboarding before heads of terms means introducers are not cut out of deals they brought in." },
-      { title: "Keep lease negotiation off the platform", why: "Solicitors handle the lease. Building it in would add legal risk and scope without helping the MVP." },
+      { title: "Prototype before high-fidelity design", why: "Finding a gap in the requirements is far cheaper in a rough clickable prototype than in polished screens." },
+      { title: "One working stage at a time", why: "The designer could review early stages while later ones were still being built, so design and requirements moved together." },
     ],
     results: [
-      "A working prototype covering the full deal lifecycle across four roles: internal team, care provider, landlord and introducer.",
-      "A design review against the prototype produced a concrete list of fixes, instead of debates about wireframes.",
+      "The design team had a working reference for every user role before designing the screens.",
+      "Gaps in the requirements surfaced and were fixed before high-fidelity design started.",
+      "Design reviews produced specific, actionable fixes instead of debates about wireframes.",
     ],
     artifacts: [
-      { title: "Deal lifecycle", text: "The 11 stages the platform supports.", items: ["Registration", "Requirements", "Property submission and review", "Viewings", "Viewing outcome", "Offer", "Heads of terms", "Works and snagging", "Compliance documents", "Lease and completion", "Landlord onboarding"] },
+      { title: "How I built the prototype", text: "The loop I repeated for each stage.", items: ["Requirement from the PRD", "Plan the stage", "Build it with AI assistance", "Type-check and build", "Review with design", "Next stage"] },
     ],
     learned: "Building the prototype yourself is the fastest way to find the gaps in your own requirements.",
   },

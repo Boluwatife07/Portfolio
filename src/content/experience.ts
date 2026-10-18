@@ -53,8 +53,8 @@ export const roles: Role[] = [
       {
         title: "Technical decisions",
         items: [
-          "Led a cloud and tooling cost review that informed the decision to move hosting providers.",
-          "Separated overlapping concepts in the payments and wallet specs so each team knew exactly what it owned.",
+          "Led a cloud and tooling cost review to reduce running costs.",
+          "Untangled overlapping concepts across specs so each team knew exactly what it owned.",
           "Introduced ID-linked build specifications connecting rules, acceptance criteria, PRDs and design frames.",
         ],
       },
@@ -80,8 +80,7 @@ export const roles: Role[] = [
         title: "Product and build",
         items: [
           "Wrote end-to-end PRDs for care providers and property partners.",
-          "Designed the anonymised multi-party communication model that protects introducer relationships.",
-          "Built an 11-stage platform prototype covering the full deal lifecycle across four user roles.",
+          "Built a clickable prototype of every user journey so the design team could design from a working reference.",
           "Wrote the admin panel specification and design and build checklists.",
         ],
       },
